@@ -1,0 +1,46 @@
+body {
+  background: black;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.dapajpg {
+  width: 200px;
+}
+
+.profile h2 {
+  color: whitesmoke;
+}
+.profile h4 {
+  color: whitesmoke;
+  transform: translateY(-10px);
+}
+
+.biodata {
+  background-color: #fff;
+}
+
+.contact a {
+  color: black;
+  font-size: 30px;
+}
+
+p {
+  color: white;
+}
+
+img {
+  width: 50px;
+}
+
+.resume {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
