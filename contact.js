@@ -16,10 +16,10 @@ function submitData() {
   } else if (inputMessage === "") {
     alert("Message harus diisi");
   } else {
-    const emailReceiver = "okahanabi@gmail.com";
+    const email = "okahanabi@gmail.com";
 
     let a = document.createElement("a");
-    a.href = `mailto:${emailReceiver}?subject=${subject}&body=${message}`;
+    a.href = `mailto:${email}?subject=${inputSubject}&body=${inputMessage}`;
     a.click();
   }
 }
