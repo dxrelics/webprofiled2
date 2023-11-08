@@ -80,7 +80,7 @@ html {
 .form {
   display: flex;
   justify-content: center;
-  color: black;
+  color: rgb(153, 50, 204);
 }
 
 .btn-nav {
