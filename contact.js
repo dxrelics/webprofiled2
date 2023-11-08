@@ -5,7 +5,6 @@ function submitData() {
   const inputSubject = document.getElementById("inputSubject").value;
   const inputMessage = document.getElementById("inputMessage").value;
 
-  // kondisi (memunculkan sebuah alert "{field} harus diisi")
   if (inputName === "") {
     alert("Nama harus diisi");
   } else if (inputEmail === "") {
@@ -17,10 +16,10 @@ function submitData() {
   } else if (inputMessage === "") {
     alert("Message harus diisi");
   } else {
-    // harus tervalidasi dulu
+    const emailReceiver = "okahanabi@gmail.com";
 
     let a = document.createElement("a");
-    a.href = `mailto:${inputEmail}?subject=${inputSubject}&body=${inputMessage}`;
+    a.href = `mailto:${emailReceiver}?subject=${subject}&body=${message}`;
     a.click();
   }
 }
