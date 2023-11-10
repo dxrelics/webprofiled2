@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+/* awal style content project */
+
+.my-project-head {
+  width: 100%;
+  margin: auto;
+}
+
+.my-project-head h1 {
+  text-align: center;
+}
+
+.my-project-content {
+  width: 70%;
+  display: flex;
+  background: rgb(215, 195, 195);
+  margin: auto;
+  padding-left: 0px;
+}
+
+.my-project-content .my-project-gambar img {
+  width: 800px;
+  padding-top: 22px;
+  padding-right: 25px;
+}
+
+.my-project-text {
+  width: 70%;
+  display: flex;
+  background: rgb(255, 255, 255);
+  margin: auto;
+  padding-left: 0px;
+  text-align: justify;
+}
+
+/* akhir style content project */
+
+/* awal style form my project */
+.form-project-container {
+  background-color: grey;
+  width: 100%;
+}
+
+.form-project-container .form-container {
+  display: flex;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-project-container .form-container .the-actually-form {
+  width: 33em;
+  height: 43em;
+  margin: auto;
+  background-color: rgb(224, 207, 209);
+  padding: 20px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.the-actually-form h1 {
+  text-align: center;
+}
+
+.the-actually-form label {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+  display: flex;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.the-actually-form input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid 1px;
+  font-size: 15px;
+  resize: none;
+}
+
+.start-end-date {
+  display: flex;
+}
+
+.start-kiri {
+  width: 100%;
+  padding-right: 50px;
+}
+
+.end-kanan {
+  width: 100%;
+}
+
+.ckbox-technology {
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid 1px;
+  margin-top: 10px;
+}
+
+.ckbox-technology input {
+  width: 50px;
+}
+
+.the-checkbox {
+  display: flex;
+}
+
+.uploud-image {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid 1px;
+  color: white;
+}
+
+.uploud-image {
+  color: black;
+}
+
+.btn-submit {
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+
+/* akhir style form my project */
+
+.line-hr {
+  width: 80%;
+}
+
+/* awal style project post */
+
+.project-post h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto 1fr;
+  width: 80%;
+  margin: auto;
+}
+
+.grid-container .grid-item1 {
+  margin: auto;
+  display: grid;
+  width: 300px;
+  border: 2px solid black;
+  background-color: rgb(224, 193, 199);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 10px 10px;
+}
+
+.grid-container img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.grid-item1 button {
+  width: 140px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-group-post-project {
+  text-align: center;
+}
+
+.font-awesome-grid {
+  font-size: 30px;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.judul-project-deadline p {
+  line-height: 0;
+  text-decoration: none;
+}
+
+.judul-project {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.deadline-project {
+  font-size: 13px;
+}
+
+.project-detail {
+  text-align: justify;
+}
+
+/* akhir style project post */
