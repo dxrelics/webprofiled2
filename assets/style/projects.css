@@ -211,4 +211,11 @@ textarea {
   text-align: justify;
 }
 
+.btn-contact {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
 /* akhir style project post */
