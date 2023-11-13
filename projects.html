@@ -1,157 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <title>Dumbways Web App</title>
-    <link rel="stylesheet" href="assets/style/style1.css" />
-    <link rel="stylesheet" href="assets/style/projects.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Font Google: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #e3e7eb;
+      }
+
+      .dumbways-logo {
+        filter: invert(47%) sepia(64%) saturate(4726%) hue-rotate(341deg)
+          brightness(103%) contrast(105%);
+      }
+
+      .text-justify {
+        text-align: justify;
+      }
+    </style>
   </head>
 
   <body>
-    <nav style="background-color: #f4f3f3; height: 75px">
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          height: 100%;
-          margin-left: 30px;
-          margin-right: 30px;
-        "
-      >
-        <ul
-          style="
-            display: flex;
-            list-style-type: none;
-            gap: 50px;
-            align-items: center;
-          "
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            src="/assets/image/dumbways.png"
+            alt="logo"
+            width="70"
+            class="dumbways-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <li>
-            <img src="assets/image/dumbways.png" style="height: 50px" />
-          </li>
-          <li class="nav-link">
-            <a href="index.html"> Home </a>
-          </li>
-        <div style="display: flex; width: 100%; justify-content: end">
-          <a href="contact.html" class="btn-contact">Contact me</a>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link fw-bold">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="project.html"
+                class="nav-link fw-bold active"
+                aria-current="page"
+                >Add Project</a
+              >
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-dark fw-bold ms-auto"
+            >Contact Me</a
+          >
         </div>
       </div>
     </nav>
 
-    <!-- awal form add my project -->
-
-    <div class="form-project-container">
-      <div class="form-container">
-        <div class="the-actually-form">
-          <h1>Add My Project</h1>
-
-          <form onsubmit="addProject(event)">
-            <div>
-              <label for="input-project-name">Project Name</label>
-              <input type="text" id="input-project-name" required />
-            </div>
-
-            <div class="start-end-date">
-              <div class="start-kiri">
-                <label for="input-start-date">Start Date</label>
-                <input type="date" id="input-start-date" required />
-              </div>
-
-              <div class="end-kanan">
-                <label for="input-end-date">End Date</label>
-                <input type="date" id="input-end-date" required />
-              </div>
-            </div>
-
-            <div>
-              <label for="input-description">Description</label>
-              <textarea id="input-description" rows="10" required></textarea>
-            </div>
-
-            <div class="ckbox-technology">
-              <label>Technology</label>
-              <div class="the-checkbox">
-                <div>
-                  <label><input type="checkbox" id="node-js" />Node Js</label>
-                  <label><input type="checkbox" id="next-js" />Next Js</label>
-                </div>
-                <div>
-                  <label><input type="checkbox" id="react-js" />React Js</label>
-                  <label
-                    ><input type="checkbox" id="type-script" />Type
-                    Script</label
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div style="padding-top: 5px">
-                <label>Uploud Image</label>
-                <div class="uploud-image">
-                  <input
-                    type="file"
-                    style="padding-top: 11px; border: none; color: white"
-                    id="input-imeg"
-                    required
-                  />
-                  <p><i class="fa-solid fa-paperclip"></i></p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style="width: 102%; margin-top: 10px">
-                <button class="btn-submit" style="float: right">Submit</button>
-              </div>
-            </div>
-          </form>
+    <!-- Project Input -->
+    <section class="container" style="margin: 100px auto; width: 540px">
+      <form method="get" class="row" id="project-input">
+        <h2 class="text-center fw-bold">ADD MY PROJECT</h2>
+        <div class="col-md-12 mb-3">
+          <label for="project-name" class="form-label fw-bold"
+            >Project Name</label
+          >
+          <input type="text" class="form-control" id="project-name" required />
         </div>
-      </div>
-    </div>
-
-    <!-- akhir form add my project -->
-
-    <hr class="line-hr" />
-
-    <div class="project-post">
-      <h1>Project</h1>
-      <div id="project" class="grid-container">
-        <div class="grid-item1">
-          <img src="assets/image/Alienware-13.jpg" alt="error images" />
-          <div class="judul-project-deadline">
-            <a href="projects-detail.html"
-              ><p class="judul-project">gambar laptop</p></a
-            >
-            <p class="deadline-project">Duration: 4month</p>
-          </div>
-          <div class="project-detail">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur dolorum libero expedita molestias est officiis enim
-              delectus iure laborum ipsam nobis, cum inventore odio corrupti
-              adipisci dolores veritatis ad ea.
-            </p>
-          </div>
-          <div class="font-awesome-grid">
-            <i class="fa-brands fa-node-js"></i>
-            <i class="fa-brands fa-google-play"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-java"></i>
-          </div>
-          <div class="btn-group-post-project">
-            <button>Edit</button>
-            <button>Read</button>
+        <div class="col-md-6 mb-3">
+          <label for="date-start" class="form-label fw-bold">Start Date</label>
+          <input type="date" class="form-control" id="date-start" required />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="date-end" class="form-label fw-bold">End Date</label>
+          <input type="date" class="form-control" id="date-end" required />
+        </div>
+        <div class="col-md-12 mb-3">
+          <label for="project-description" class="form-label fw-bold"
+            >Description</label
+          >
+          <textarea
+            class="form-control"
+            id="project-description"
+            cols="30"
+            rows="10"
+            style="resize: none"
+          ></textarea>
+        </div>
+        <div class="col-md-12 mb-3">
+          <label for="#" class="form-label fw-bold">Technologies</label>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="node-js"
+          />
+          <label class="form-check-label" for="node-js"> Node JS </label>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="react-js"
+          />
+          <label class="form-check-label" for="react-js"> React JS </label>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="next-js"
+          />
+          <label class="form-check-label" for="next-js"> Next JS </label>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="typescript"
+          />
+          <label class="form-check-label" for="typescript"> TypeScript </label>
+        </div>
+        <div class="col-md-12 mb-3">
+          <label for="upload-image" class="form-label fw-bold"
+            >Upload Image</label
+          >
+          <div class="input-group">
+            <input
+              type="file"
+              class="form-control"
+              id="upload-image"
+              aria-label="Upload"
+            />
+            <span class="input-group-text"
+              ><i class="fa-solid fa-paperclip"></i
+            ></span>
           </div>
         </div>
-      </div>
-    </div>
-    <script src="projects.js"></script>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-dark rounded-5 px-4 fw-bold">
+            submit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
