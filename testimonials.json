@@ -1,0 +1,26 @@
+[
+  {
+    "author": "Azriel",
+    "content": "Anjay Mabar!",
+    "image": "https://images.pexels.com/photos/19138633/pexels-photo-19138633/free-photo-of-ritratto-ragazza.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    "rating": 5
+  },
+  {
+    "author": "Aldi",
+    "content": "Mending boxing daripada ngoding!",
+    "image": "https://images.pexels.com/photos/19138633/pexels-photo-19138633/free-photo-of-ritratto-ragazza.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    "rating": 5
+  },
+  {
+    "author": "Bagus",
+    "content": "Mobile legends nomor 1, ngoding nanti dulu",
+    "image": "https://images.pexels.com/photos/19138633/pexels-photo-19138633/free-photo-of-ritratto-ragazza.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    "rating": 1
+  },
+  {
+    "author": "Gerrard",
+    "content": "Mendang Mending anjay",
+    "image": "https://images.pexels.com/photos/19138633/pexels-photo-19138633/free-photo-of-ritratto-ragazza.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    "rating": 4
+  }
+]
