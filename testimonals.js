@@ -17,18 +17,18 @@ class Testimonial {
 }
 
 const testimonial1 = new Testimonial(
-  "Bayu",
-  "Saya bangga dengan Chelsea",
+  "Azriel",
+  "Anjay Mabar!",
   "https://images.pexels.com/photos/3754285/pexels-photo-3754285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 );
 const testimonial2 = new Testimonial(
-  "Hima",
-  "Saya bangga dengan City",
+  "Aldi",
+  "Mending boxing daripada ngoding!",
   "https://images.pexels.com/photos/3468827/pexels-photo-3468827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 );
 const testimonial3 = new Testimonial(
-  "Tayo",
-  "Saya malu dengan MU",
+  "Bagus",
+  "Mobile legends nomor 1, ngoding nanti dulu",
   "https://images.pexels.com/photos/936019/pexels-photo-936019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 );
 
